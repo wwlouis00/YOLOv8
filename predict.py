@@ -8,6 +8,7 @@ model = YOLO("your_model.pt")
 model.info()
 
 # predict your image or video
+# If you want to capture real-time camera images, please change the "source" to "0" or "1."
 results = model.predict(source="your_image",project="result/your_save_dir",name="your_folder_name",save=True)
 print(results)
 
