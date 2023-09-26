@@ -76,8 +76,6 @@ for _, prediction in predictions.iterrows():
 # 顯示圖像和預測結果
 plt.show()
 ```
-
-這個範例示範了使用 YOLOv5 模型進行目標檢測的基本步驟，包括初始化模型、載入圖像、執行目標檢測，並將預測結果顯示在圖像上。
-
-透過 Ultralytics 的工具，開發者可以更方便地進行目標檢測任務，並根據需要進行模型調整和結果視覺化。
+This example demonstrates the basic steps of performing object detection using the YOLOv5 model, including initializing the model, loading an image, executing object detection, and displaying the prediction results on the image.
+With the tools provided by Ultralytics, developers can conduct object detection tasks more conveniently and make model adjustments and result visualizations as needed.
 
