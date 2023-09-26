@@ -76,6 +76,5 @@ for _, prediction in predictions.iterrows():
 # 顯示圖像和預測結果
 plt.show()
 ```
-This example demonstrates the basic steps of performing object detection using the YOLOv5 model, including initializing the model, loading an image, executing object detection, and displaying the prediction results on the image.
-With the tools provided by Ultralytics, developers can conduct object detection tasks more conveniently and make model adjustments and result visualizations as needed.
+This example demonstrates the basic steps of performing object detection using the YOLOv5 model, including initializing the model, loading an image, executing object detection, and displaying the prediction results on the image. With the tools provided by Ultralytics, developers can conduct object detection tasks more conveniently and make model adjustments and result visualizations as needed.
 
