@@ -38,7 +38,7 @@ pip install -U ultralytics
 
 ## 使用目標檢測模型
 
-Ultralytics 提供了一個名為 [YOLOv5](https://github.com/ultralytics/yolov5) 的目標檢測模型。以下是一個簡單的範例，展示了如何使用 YOLOv5 模型進行目標檢測：
+Ultralytics is an open-source deep learning research framework designed to offer user-friendly tools for developers working on tasks like object detection, image classification, and semantic segmentation. Here is a brief introduction and guide on how to use Ultralytics.
 
 ```python
 import torch
