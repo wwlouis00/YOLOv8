@@ -5,8 +5,11 @@ YOLOv8 (You Only Look Once Version 8) is a deep learning model for object detect
 ## 主要特點
 
 - **Real-time Object Detection**: YOLOv8 is a real-time object detection model capable of simultaneously identifying multiple objects in an image in a single forward pass. This makes it highly useful for applications requiring efficient processing.
+
 - **Multi-scale Detection**: YOLOv8 employs different-scale feature maps to detect objects of varying sizes, enhancing its ability to handle objects of various dimensions and improving detection accuracy.
+ 
 - **Robust Post-processing**: YOLOv8 utilizes a series of post-processing techniques, including Non-Maximum Suppression (NMS) and threshold filtering, to eliminate overlapping detection boxes and filter out detections with low confidence scores.
+
 - **Support for Multiple Datasets**: YOLOv8 can be applied to various types of datasets and can be fine-tuned to adapt to different application scenarios.
 
 ## 使用場景
