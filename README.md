@@ -1,16 +1,13 @@
 # YOLOv8 簡介
 
-YOLOv8（You Only Look Once Version 8）是目標檢測的深度學習模型，它是 YOLO（You Only Look Once）系列的最新版本。YOLOv8 通過一次前向傳播即可在圖像中同時檢測多個物體，並為每個物體提供其邊界框和類別標籤。
+YOLOv8 (You Only Look Once Version 8) is a deep learning model for object detection, and it represents the latest iteration in the YOLO (You Only Look Once) series. YOLOv8 is capable of simultaneously detecting multiple objects within an image in a single forward pass and provides bounding boxes and class labels for each detected object.
 
 ## 主要特點
 
-- **即時目標檢測**：YOLOv8 是一個即時目標檢測模型，它可以在一次前向傳播中同時識別圖像中的多個物體。這使它在需要高效處理的應用中非常有用。
-
-- **多尺度檢測**：YOLOv8 通過使用不同尺度的特徵圖來檢測不同大小的物體，這使得它能夠處理各種大小的物體，從而提高檢測的準確性。
-
-- **強大的後處理**：YOLOv8 使用了一系列的後處理技術，包括非極大值抑制（NMS）和閾值過濾，來消除重疊的檢測框和過濾低置信度的檢測。
-
-- **支持多種數據集**：YOLOv8 可以用於不同類型的數據集，並且可以進行細微的調整以適應不同的應用場景。
+- **Real-time Object Detection**: YOLOv8 is a real-time object detection model capable of simultaneously identifying multiple objects in an image in a single forward pass. This makes it highly useful for applications requiring efficient processing.
+- **Multi-scale Detection**: YOLOv8 employs different-scale feature maps to detect objects of varying sizes, enhancing its ability to handle objects of various dimensions and improving detection accuracy.
+- **Robust Post-processing**: YOLOv8 utilizes a series of post-processing techniques, including Non-Maximum Suppression (NMS) and threshold filtering, to eliminate overlapping detection boxes and filter out detections with low confidence scores.
+- **Support for Multiple Datasets**: YOLOv8 can be applied to various types of datasets and can be fine-tuned to adapt to different application scenarios.
 
 ## 使用場景
 
@@ -22,7 +19,7 @@ YOLOv8（You Only Look Once Version 8）是目標檢測的深度學習模型，�
 
 ## 學習資源
 
-您可以通過研讀 YOLOv8 的相關論文、查看開源代碼庫和參加深度學習相關的線上課程來深入了解 YOLOv8 的運作原理和使用方法。
+You can gain a deeper understanding of how YOLOv8 works and how to use it by studying related research papers, exploring open-source code repositories, and participating in online courses related to deep learning.
 
 ## 使用 Python 與 Ultralytics
 
