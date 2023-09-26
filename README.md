@@ -14,18 +14,11 @@ YOLOv8 (You Only Look Once Version 8) is a deep learning model for object detect
 
 ## 使用場景
 
-- **物體檢測**：YOLOv8 常用於物體檢測任務，如交通監控、人臉識別、工業檢測等。
+- **Object Detection**: YOLOv8 is commonly used for object detection tasks such as traffic monitoring, facial recognition, industrial inspection, and more.
 
-- **自動駕駛**：YOLOv8 可用於自動駕駛中的物體和行人檢測，幫助車輛識別周圍的障礙物。
+- **Autonomous Driving**: YOLOv8 can be applied to object and pedestrian detection in autonomous driving, assisting vehicles in identifying obstacles in their surroundings.
 
-- **安防監控**：YOLOv8 可用於安防監控中，幫助監測人流、車輛和其他物體。
-
-
-- Object Detection: YOLOv8 is commonly used for object detection tasks such as traffic monitoring, facial recognition, industrial inspection, and more.
-
-- Autonomous Driving: YOLOv8 can be applied to object and pedestrian detection in autonomous driving, assisting vehicles in identifying obstacles in their surroundings.
-
-- Security Surveillance: YOLOv8 finds applications in security surveillance, helping monitor human traffic, vehicles, and other objects.
+- **Security Surveillance**: YOLOv8 finds applications in security surveillance, helping monitor human traffic, vehicles, and other objects.
 
 ## 學習資源
 
