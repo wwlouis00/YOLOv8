@@ -1,8 +1,8 @@
-# YOLOv8 簡介
+# YOLOv8
 
 YOLOv8 (You Only Look Once Version 8) is a deep learning model for object detection, and it represents the latest iteration in the YOLO (You Only Look Once) series. YOLOv8 is capable of simultaneously detecting multiple objects within an image in a single forward pass and provides bounding boxes and class labels for each detected object.
 
-## 主要特點
+## Key Features
 
 - **Real-time Object Detection**: YOLOv8 is a real-time object detection model capable of simultaneously identifying multiple objects in an image in a single forward pass. This makes it highly useful for applications requiring efficient processing.
 
@@ -12,7 +12,7 @@ YOLOv8 (You Only Look Once Version 8) is a deep learning model for object detect
 
 - **Support for Multiple Datasets**: YOLOv8 can be applied to various types of datasets and can be fine-tuned to adapt to different application scenarios.
 
-## 使用場景
+## Cases
 
 - **Object Detection**: YOLOv8 is commonly used for object detection tasks such as traffic monitoring, facial recognition, industrial inspection, and more.
 
@@ -20,18 +20,15 @@ YOLOv8 (You Only Look Once Version 8) is a deep learning model for object detect
 
 - **Security Surveillance**: YOLOv8 finds applications in security surveillance, helping monitor human traffic, vehicles, and other objects.
 
-## 學習資源
+## Learning Resources
 
 You can gain a deeper understanding of how YOLOv8 works and how to use it by studying related research papers, exploring open-source code repositories, and participating in online courses related to deep learning.
 
-## 使用 Python 與 Ultralytics
+## Using Python with Ultralytics.
 
-[Ultralytics](https://www.ultralytics.com/) 是一個開源的深度學習研究框架，旨在提供易於使用的工具，協助開發者進行目標檢測、圖像分類和語意分割等任務。這裡提供了一個簡單的介紹和使用 Ultralytics 的方法：
+[Ultralytics](https://www.ultralytics.com/) It is an open-source deep learning research framework designed to provide easy-to-use tools to assist developers in tasks such as object detection, image classification, and semantic segmentation. Here, we provide a brief introduction and usage guide for Ultralytics.
 
-## 安裝 Ultralytics
-
-首先，你需要使用 pip 安裝 Ultralytics 模組。打開終端機並執行以下命令：
-
+## Install Ultralytics
 ```
 pip install -U ultralytics
 ```
