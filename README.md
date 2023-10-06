@@ -33,7 +33,7 @@ You can gain a deeper understanding of how YOLOv8 works and how to use it by stu
 pip install -U ultralytics
 ```
 
-## 使用目標檢測模型
+## Object Detection Models
 
 Ultralytics is an open-source deep learning research framework designed to offer user-friendly tools for developers working on tasks like object detection, image classification, and semantic segmentation. Here is a brief introduction and guide on how to use Ultralytics.
 
