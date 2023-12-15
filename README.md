@@ -38,40 +38,20 @@ pip install -U ultralytics
 Ultralytics is an open-source deep learning research framework designed to offer user-friendly tools for developers working on tasks like object detection, image classification, and semantic segmentation. Here is a brief introduction and guide on how to use Ultralytics.
 
 ```python
-import torch
-from PIL import Image
-from pathlib import Path
-from matplotlib import pyplot as plt
-from IPython.display import display
+from ultralytics import YOLO
 
-# 匯入目標檢測模型
-from yolov5 import YOLOv5
+# Load a model
+model = YOLO('yolov8n.pt')  # pretrained YOLOv8n model
 
-# 初始化模型
-model = YOLOv5()
+# Run batched inference on a list of images
+results = model(['im1.jpg', 'im2.jpg'])  # return a list of Results objects
 
-# 載入圖像
-image_path = Path("path/to/your/image.jpg")
-image = Image.open(image_path)
-
-# 執行目標檢測
-results = model(image)
-
-# 取得預測結果
-predictions = results.pandas().xyxy[0]
-
-# 顯示圖像和預測框
-plt.imshow(image)
-plt.axis('off')
-
-# 繪製預測框
-for _, prediction in predictions.iterrows():
-    xmin, ymin, xmax, ymax = prediction[["xmin", "ymin", "xmax", "ymax"]]
-    plt.rectangle((xmin, ymin), xmax - xmin, ymax - ymin, fill=False, color="red")
-    plt.text(xmin, ymin, prediction["name"], color="red")
-
-# 顯示圖像和預測結果
-plt.show()
+# Process results list
+for result in results:
+    boxes = result.boxes  # Boxes object for bbox outputs
+    masks = result.masks  # Masks object for segmentation masks outputs
+    keypoints = result.keypoints  # Keypoints object for pose outputs
+    probs = result.probs  # Probs object for classification outputs
 ```
 This example demonstrates the basic steps of performing object detection using the YOLOv5 model, including initializing the model, loading an image, executing object detection, and displaying the prediction results on the image. With the tools provided by Ultralytics, developers can conduct object detection tasks more conveniently and make model adjustments and result visualizations as needed.
 
