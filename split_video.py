@@ -1,35 +1,31 @@
+# Splitting a Video into Images
 import cv2 as cv
-import os
-# 打開影片文件
-video_path = 'your video'  # 替換為您的影片文件路徑
+
+# Open the video file
+video_path = 'your video'  # Replace with the path to your video file
 
 cap = cv.VideoCapture(video_path)
 
-# 建立圖片儲存的資料夾
-path = 'video'
-if not os.path.isdir(path):
-    os.makedirs(path)
-
-# 確保影片文件成功打開
+# Ensure the video file is successfully opened
 if not cap.isOpened():
-    print("無法打開影片文件")
+    print("Unable to open the video file")
     exit()
 
 frame_count = 0
 
 while True:
-    # 讀取一帧
+    # Read a frame
     ret, frame = cap.read()
-    # 如果影片結束，則退出循環
+    # If the video ends, exit the loop
     if not ret:
         break
-    # 保存當前幀為圖像文件
-    output_file = f"video/frame_{frame_count}.jpg"  # 每個幀都保存為一個單獨的圖像文件
+    # Save the current frame as an image file
+    output_file = f"video/frame_{frame_count}.jpg"  # Save each frame as a separate image file
     cv.imwrite(output_file, frame)
     
     frame_count += 1
 
-# 釋放影片文件
+# Release the video file
 cap.release()
 
-print(f"共分割了 {frame_count} 幀圖像")
+print(f"Total frames split: {frame_count}")
